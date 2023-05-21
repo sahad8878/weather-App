@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Weather App</h1>
+      <h2>Enter your city name and find weather</h2>
+    </div>
+    <div id="weather-container">
+      <input type="text" id="city-input" placeholder="Enter city name" />
+      <button id="search-button" class="hover-button">Search</button>
+      <div id="weather-info"></div>
+    </div>
+
+    <!-- imagesss -->
+
+    <h1 id="imageHeading">City Image Gallery</h1>
+    <div id="main-image-container">
+      <img src="" alt="" class="main-image" id="main-image" />
+    </div>
+    <div class="loader">
+      <img src="loading.gif" alt="Loading..." />
+    </div>
+
+    <div class="grid-container" id="grid-container"></div>
+    <!-- add item with form validatoin -->
+
+    <div class="formDiv">
+      <h1>Contact Us</h1>
+
+      <form class="form" onsubmit="addItem(event)">
+        <div class="inputDiv">
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+          <span id="name-error" class="error"></span>
+        </div>
+        <div class="inputDiv">
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+          <span id="email-error" class="error"></span>
+        </div>
+        <div class="inputDiv">
+          <label for="message">Message:</label>
+          <textarea id="message"></textarea>
+          <span id="message-error" class="error"></span>
+        </div>
+        <button type="submit" class="hover-button">Submit</button>
+      </form>
+
+      <ul id="list"></ul>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="script.js"></script>
+</html>
