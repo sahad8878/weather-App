@@ -1,3 +1,9 @@
+
+body{
+  margin: 0;
+  padding: 0;
+background-color:azure ;
+}
 .hover-button {
   background-color: blue;
   color: white;
@@ -38,23 +44,27 @@
   margin-top: 20px;
 }
 .main-image {
-  /* width: 300px;
-  height: 300px;
-  object-fit: cover; */
   min-width: 300px;
   min-height: 300px;
-
   height: auto;
   object-fit: cover;
 }
 .header {
   text-align: center;
+  /* height: 70px; ; */
+  padding: 20px;
+  background-color:antiquewhite ;
 }
 
 #weather-container {
   margin-top: 20px;
   text-align: center;
 }
+#weather-container h2 {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 
 #city-input {
   padding: 8px;
